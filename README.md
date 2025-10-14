@@ -38,7 +38,10 @@ Brindar una solución sencilla y accesible para el **control de préstamos de ma
 
 ## ⚙️ Instalación y ejecución
 
-### 1️⃣ Clonar el repositorio
+
 ```bash
 git clone https://github.com/<tu_usuario>/Prestamos_libros_app.git
 cd Prestamos_libros_app
+npm install
+node server.js
+node server.js
