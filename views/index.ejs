@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestor de Préstamos de Libros</title>
+  <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+  <h1>Registro de Préstamos de Libros</h1>
+
+  <form action="/agregar" method="POST">
+    <label>Nombre del estudiante:</label><br>
+    <input type="text" name="estudiante" required><br><br>
+
+    <label>ID del estudiante:</label><br>
+    <input type="text" name="id" required><br><br>
+
+    <label>ISBN del libro:</label><br>
+    <input type="text" name="isbn" required><br><br>
+
+    <label>Nombre del libro:</label><br>
+    <input type="text" name="libro" required><br><br>
+
+    <label>Fecha de préstamo:</label><br>
+    <input type="date" name="fechaPrestamo" required><br><br>
+
+    <label>Fecha de devolución:</label><br>
+    <input type="date" name="fechaDevolucion" required><br><br>
+
+    <button type="submit">Registrar préstamo</button>
+  </form>
+
+  <br>
+  <a href="/lista">Ver lista de préstamos</a>
+</body>
+</html>
