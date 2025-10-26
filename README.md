@@ -33,6 +33,7 @@ Brindar una solución sencilla y accesible para el **control de préstamos de ma
 - **Express.js**
 - **EJS (Embedded JavaScript templates)**
 - **HTML / CSS**
+- **SQLITE**
 
 ---
 
