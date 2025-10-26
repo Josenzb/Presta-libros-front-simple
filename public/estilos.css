@@ -61,3 +61,8 @@ li.vencido {
   color: green;
   font-weight: bold;
 }
+
+.vencido {
+  border-left: 6px solid red;
+  background-color: #ffe5e5;
+}

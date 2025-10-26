@@ -12,19 +12,19 @@
     <% if (prestamos.length === 0) { %>
       <li>No hay préstamos registrados aún.</li>
     <% } else { %>
-      <% prestamos.forEach((p, i) => { 
-          const vencido = !p.devuelto && p.fechaDevolucion < hoy;
+      <% prestamos.forEach(p => { 
+           const vencido = !p.devuelto && p.fechaDevolucion < hoy;
       %>
         <li class="<%= vencido ? 'vencido' : '' %>">
           <strong><%= p.libro %></strong> (ISBN: <%= p.isbn %>)<br>
-          <em>Estudiante:</em> <%= p.estudiante %> (ID: <%= p.id %>)<br>
+          <em>Estudiante:</em> <%= p.estudiante %> (ID: <%= p.id_estudiante %>)<br>
           <em>Fecha de préstamo:</em> <%= p.fechaPrestamo %> |
           <em>Devolución:</em> <%= p.fechaDevolucion %><br>
 
           <% if (p.devuelto) { %>
             <span class="devuelto">✔ Devuelto</span>
           <% } else { %>
-            <form action="/devolver/<%= i %>" method="POST" style="display:inline;">
+            <form action="/devolver/<%= p.id %>" method="POST" style="display:inline;">
               <button type="submit">Marcar como devuelto</button>
             </form>
           <% } %>
